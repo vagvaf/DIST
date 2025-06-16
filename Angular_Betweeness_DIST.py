@@ -19,7 +19,7 @@ props = {
     'norm_standard':True,
     'norm_syntax':True,
     'weigh_by_length': True,
-    'output_file': "AI.shp" #choose output filename
+    'output_file': "AB.shp" #choose output filename
     }
 
 def perform_angular_betwenness(road_network, props):

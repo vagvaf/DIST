@@ -7,9 +7,12 @@ The aim of this repository is to provide a scripting interface to Place Syntax T
 Note that the user has to enter a valid path to a pst library (see inside the code for how to do that).
 
 ## Angular Betweeness
+
 The Angular Betweeness script allows performing angular betweeness analyses. The user can use all the options that are available for the PST qgis plugin. For more information see section 6.5 and 6.4 in the PST documentation: https://www.researchgate.net/publication/385514803_PST_Documentation_v331_241101
+
 Below there is an explanation for each option.
 
+```
 props = {
     'network': '', --- The path to the shapefile of the (segmented) network
     'crs': 3006, --- The EPSG code for the refetence system
@@ -22,12 +25,15 @@ props = {
     'weigh_by_length': True, --- The analysis also offers an option for weighing by length. Can be True/False
     'output_file': "AB.shp" --- location and name of the output file.
     }
-
+```
 
 ## Angular Integration
 
 The Angular Integration script allows performing angular integration analyses. The user can use all the options that are available for the PST qgis plugin. For more information see section 6.3 in the PST documentation: https://www.researchgate.net/publication/385514803_PST_Documentation_v331_241101
+
 Below there is an explanation for each option.
+
+```
 props = {
     'network': '', --- The path to the shapefile of the (segmented) network
     'crs': 3006, --- The EPSG code for the refetence system
@@ -44,3 +50,4 @@ props = {
     'output_MD':True, -- Provide Mean depth (MD) output. Can be True/False.
     'output_file': "AI.shp" --- location and name of the output file.
     }
+```
